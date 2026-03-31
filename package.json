@@ -1,0 +1,25 @@
+{
+  "name": "testjs",
+  "version": "1.0.0",
+  "main": "src/calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "./TestResults",
+          "outputName": "junit.xml"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "jest-junit": "^16.0.0"
+  }
+}
